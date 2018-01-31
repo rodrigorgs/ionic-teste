@@ -8,6 +8,24 @@
 </ion-header>
 
 <ion-content padding>
+
+  <h3>Contatos</h3>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Telefone</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <button ion-button (click)="increment()">Salvar</button>
+  <button ion-button (click)="increment()">Apagar primeiro</button>
+
+
   <h3>Ionic Menu Starter</h3>
 
   <p>
@@ -18,4 +36,5 @@
   <button ion-button (click)="increment()">Increment</button>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
+
 </ion-content>
