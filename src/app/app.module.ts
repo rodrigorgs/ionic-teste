@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AboutPage } from '../pages/about/about';
 import { ListProvider } from '../providers/list/list';
+import { AppPreferences } from '@ionic-native/app-preferences';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ListProvider } from '../providers/list/list';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ListProvider
+    ListProvider,
+    AppPreferences
   ]
 })
 export class AppModule {}
