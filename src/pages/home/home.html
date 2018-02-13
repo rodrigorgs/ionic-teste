@@ -9,27 +9,18 @@
 
 <ion-content padding>
 
-  <h3>Contatos</h3>
-
-  <ion-list>
-    <ion-item>
-      <ion-label>Nome</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>Telefone</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-  </ion-list>
-  
-  <button ion-button (click)="increment()">Salvar</button>
-  <button ion-button (click)="increment()">Apagar primeiro</button>
-
   <h3>Contador com AppPreferences</h3>
 
   <p>COUNT: {{count || 0}}</p>
-  <button ion-button (click)="increment()">Increment</button>
+  <button ion-button (click)="increment()">Incrementar</button>
 
   <p>Recarregue a página e veja que a contagem será mantida</p>
   
+  <h3>Requisição web</h3>
+
+  <p>Resultado: <span>{{list}}</span></p>
+  <button ion-button (click)="requestNumbers()">
+    Fazer requisição web
+  </button>
+
 </ion-content>
